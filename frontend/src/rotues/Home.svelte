@@ -1,7 +1,6 @@
 <script>
-    import fastapi from "../lib/api";
-    import {link} from 'svelte-spa-router'
-    import { createEventDispatcher } from "svelte";
+    import fastapi from "../lib/api"
+    import { link } from 'svelte-spa-router'
 
     let question_list = []
 
