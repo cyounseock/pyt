@@ -8,7 +8,7 @@
     let content = ""
     
     function get_question() {
-        fastapi("get", "/api/question/detail" + question_id, {}, (json) => {
+        fastapi("get", "/api/question/detail/" + question_id, {}, (json) => {
             question = json
         })
     }
