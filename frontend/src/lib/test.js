@@ -3,7 +3,7 @@ const fastapi = (operation, url, params, success_callback, failure_callback) => 
     let content_type = 'application/json'
     let body = JSON.stringify(params)
 
-    let _url = import.meta.env.VITE_SERVER_URL + url
+    let _url = import.meta.env.VITE_SERVER_URL+url
     if(method === 'get') {
         _url += "?" + new URLSearchParams(params)
     }
@@ -21,7 +21,7 @@ const fastapi = (operation, url, params, success_callback, failure_callback) => 
 
     fetch(_url, options)
         .then(response => {
-            if(response.status === 204) { // No Content
+            if(response.status === 204) {  // No content
                 if(success_callback) {
                     success_callback()
                 }

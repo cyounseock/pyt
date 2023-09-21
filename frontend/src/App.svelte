@@ -1,7 +1,7 @@
 <script>
   import Router from 'svelte-spa-router'
-  import Home from "./rotues/Home.svelte"
-  import Detail from "./rotues/Detail.svelte"
+  import Home from "./routes/Home.svelte"
+  import Detail from "./routes/Detail.svelte"
 
   const routes = {
     '/': Home,

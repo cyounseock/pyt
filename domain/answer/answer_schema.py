@@ -10,7 +10,7 @@ class AnswerCreate(BaseModel):
         if not v or not v.strip():
             raise ValueError('not null')
         return v
-    
+
 class Answer(BaseModel):
     id: int
     content: str
